@@ -4,14 +4,14 @@ Real-time event analytics platform built with NestJS microservices, Kafka, Elast
 
 ## Tech Stack
 
-- **Backend** — 5 NestJS microservices (TypeScript)
-- **Database** — PostgreSQL + Elasticsearch
-- **Messaging** — Kafka
-- **Frontend** — React + TypeScript + Tailwind CSS
-- **AI** — Anthropic Claude API
-- **Auth** — JWT + Passport
-- **Real-time** — WebSockets (Socket.IO)
-- **Infrastructure** — Docker + Docker Compose
+- **Backend**: 5 NestJS microservices (TypeScript)
+- **Database**: PostgreSQL + Elasticsearch
+- **Messaging**: Kafka
+- **Frontend**: React + TypeScript + Tailwind CSS
+- **AI**: Anthropic Claude API
+- **Auth**: JWT + Passport
+- **Real-time**: WebSockets (Socket.IO)
+- **Infrastructure**: Docker + Docker Compose
 
 ## Services
 
@@ -46,12 +46,3 @@ cd services/search-service && npm run start:dev
 cd services/alert-service && npm run start:dev
 cd services/ai-insight-service && npm run start:dev
 cd frontend && npm run dev
-
-```
-
-Open http://localhost:5173
-
-## Author
-
-Dananjaya Thathsara
-```
