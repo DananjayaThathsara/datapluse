@@ -2,7 +2,6 @@
 
 Real-time event analytics platform. Events come in, get saved, appear on screen instantly, and an AI summarizes everything every 60 seconds.
 
--
 
 ## Tech Stack
 
@@ -16,8 +15,6 @@ Real-time event analytics platform. Events come in, get saved, appear on screen 
 - **Infrastructure** - Docker, Docker Compose
 - **Deployment** - Railway (backend), Hostinger (frontend)
 
--
-
 ## Services
 
 | Service | Port | Role |
@@ -27,8 +24,6 @@ Real-time event analytics platform. Events come in, get saved, appear on screen 
 | search-service | 3002 | Kafka consumer, index events to Elasticsearch |
 | alert-service | 3003 | Kafka consumer, push events to browser via WebSocket |
 | ai-insight-service | 3004 | Every 60s - read Elasticsearch, call Claude, push summary |
-
--
 
 ## How It Works
 
@@ -40,8 +35,6 @@ Real-time event analytics platform. Events come in, get saved, appear on screen 
 6. search-service receives from Kafka and indexes to Elasticsearch
 7. alert-service receives from Kafka and pushes to browser via WebSocket - under 100ms
 8. Every 60 seconds - ai-insight-service reads Elasticsearch, sends to Claude, pushes plain English summary to dashboard
-
--
 
 ## Running Locally
 
@@ -159,8 +152,6 @@ cd frontend && npm run dev
 
 Open **http://localhost:5173** - register, login, fire events.
 
--
-
 ## Project Structure
 
 ```
@@ -175,8 +166,6 @@ datapulse/
 └── docker-compose.yml
 ```
 
--
-
 ## API Endpoints
 
 ```
@@ -190,8 +179,6 @@ GET   /events/:id           single event
 
 GET   /search?q=keyword     full-text search via Elasticsearch
 ```
-
--
 
 ## Author
 
