@@ -182,4 +182,4 @@ GET   /search?q=keyword     full-text search via Elasticsearch
 
 ## Author
 
-Dananjaya Thathsara - Senior Full Stack Engineer, Dubai UAE
+Dananjaya Thathsara - Senior Full Stack Engineer
